@@ -6,15 +6,24 @@
 <title>Tolstoy Debbarma</title>
 <link rel="icon" type="image/x-icon" href="images\web_icon.ico">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EERMERTYEN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-EERMERTYEN');
-  </script>
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+     
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+        $("#gfg").html(data.ip);
+    })
+    </script>
 </head>
 <body >
 <table summary="Table for page layout." id="tlayout">
@@ -52,6 +61,12 @@ Email- <a href = "mailto: tolstoydb24@gmail.com">tolstoydb24@gmail.com</a>
 <i class="fa fa-telegram" style="font-size:29px;color:blue"></i>
 <a href="https://t.me/lightning2410_2" target="_blank"><button style="font-size:18px">Telegram</button></a> <br>
 
+<center>
+        <h3>Public IP Address of user is:</h3>
+        <p id="gfg"></p>
+ 
+    </center>
+	
 <br>
 ...... <br>
 
