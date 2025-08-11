@@ -1,85 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW4PE5E11H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WW4PE5E11H');
-</script>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Tolstoy Debbarma</title>
-<link rel="icon" type="image/x-icon" href="images\web_icon.ico">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
-     
-      <script>
-     
-    /* Add "https://api.ipify.org?format=json" statement
-               this will communicate with the ipify servers in
-               order to retrieve the IP address $.getJSON will
-               load JSON-encoded data from the server using a
-               GET HTTP request */
-                
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
-         
-        // Setting text of element P with id gfg
-        $("#gfg").html(data.ip);
-    })
-    </script>
+  <meta charset="UTF-8">
+  <title>Michael Schlottke-Lakemper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+    .container {
+      max-width: 850px;
+      margin: 32px auto;
+      background: #fff;
+      border-radius: 9px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+      padding: 32px 36px 0 36px;
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .profile-header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #e0e0e0;
+    }
+    .profile-info h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .profile-info p {
+      margin: 8px 0;
+      color: #4864c2;
+    }
+    .links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #527bbd;
+      font-size: 1.2em;
+    }
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+    }
+    .section {
+      flex: 1;
+      margin-right: 38px;
+    }
+    .section:last-child {
+      margin-right: 0;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.15em;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    .education-list {
+      list-style: none;
+      padding: 0;
+    }
+    .education-list li {
+      margin-bottom: 14px;
+    }
+    .contact-section {
+      margin-top: 44px;
+      padding: 12px 0 26px 0;
+      border-top: 1px solid #eee;
+      color: #333;
+    }
+    .contact-item {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .contact-item .icon {
+      margin-right: 12px;
+      color: #4864c2;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 18px; }
+      .profile-header { flex-direction: column; gap: 14px; align-items: flex-start; }
+      .main-content { flex-direction: column; }
+      .section { margin-right: 0; margin-bottom: 20px; }
+    }
+  </style>
+  <!-- You can use favicon.ico here if you have one -->
 </head>
-<body >
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">******************</div>
-<div class="menu-item"><a href="index.html" class="current" style="color:red">Introduction</a></div>
-<div class="menu-item"><a href="qualif.html">Qualifications</a></div>
-<div class="menu-item"><a href="exp.html">Experience</a></div>
-<div class="menu-item"><a href="pubs.html">Publications</a></div>
-<div class="menu-item"><a href="proj.html">Projects</a></div>
-<div class="menu-item"><a href="awards.html">Awards</a></div>
-<div class="menu-item"><a href="misc.html">Miscellaneous</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Tolstoy Debbarma</h1>
-</div>
-<table class="imgtable"><tr><td valign="top">
-<img src="images/profile.jpg" alt="Picture" width="222px" height="280px" />&nbsp;</td>
-<td align="left"><p><b>Tolstoy Debbarma</b> <br/>
-<i>PhD Researcher</i> <br>
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <!-- Add your photo in img src below -->
+      <img src="your_photo.jpg" alt="Profile photo">
+      <div class="profile-info">
+        <h1>Michael Schlottke-Lakemper</h1>
+        <div>Professor</div>
+        <p>University of Augsburg, Germany</p>
+        <div class="links">
+          <a href="mailto:michael.schlottke-lakemper@uni-a.de" title="Email">&#9993;</a>
+          <a href="https://scholar.google.com" title="Google Scholar">G</a>
+          <a href="https://orcid.org/" title="ORCID">iD</a>
+          <a href="https://www.linkedin.com" title="LinkedIn">in</a>
+          <a href="https://github.com/" title="GitHub">GH</a>
+        </div>
+      </div>
+    </div>
 
-<br>
+    <div style="margin-top:18px;">
+      I am computational scientist and professor at the <b>Centre for Advanced Analytics and Predictive Sciences</b> of the University of Augsburg, Germany, where I lead the <b>High-Performance Scientific Computing Lab</b> in the Faculty of Mathematics, Natural Sciences, and Materials Engineering. My research focus is on numerical methods for adaptive multi-physics simulations, research software engineering for high-performance computing, and scientific machine learning.
+    </div>
 
-Laboratory of Simulation of Flows using Numerics<br>
-Department of Aerospace Engineering <br>
-IIT Kanpur, India - 208016 <br>
-Email- <a href = "mailto: tolstoydb24@gmail.com">tolstoydb24@gmail.com</a> 
-<a href="https://tolstoydebbarma.github.io/pgp_public.html" target="_blank" style="font-size:10px;" >(PGP public key)</a>
-<br>
-<i class="fa fa-whatsapp" style="font-size:32px;color:green"></i>
-<a href="https://wa.me/+918132947533" target="_blank"><button style="font-size:18px">Whatsapp</button></a> <br>
-<i class="fa fa-telegram" style="font-size:29px;color:blue"></i>
-<a href="https://t.me/lightning2410_2" target="_blank"><button style="font-size:18px">Telegram</button></a> <br>
+    <div class="main-content">
+      <div class="section">
+        <h2>Interests</h2>
+        <ul>
+          <li>Adaptive multi-physics simulations</li>
+          <li>Scientific machine learning</li>
+          <li>Research software engineering for high-performance computing with Julia</li>
+          <li>Applications in fluid mechanics, aeroacoustics, and astrophysics</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li>
+            <strong>Dr.-Ing. in Computational Engineering Science, 2017</strong><br>
+            RWTH Aachen University, Germany
+          </li>
+          <li>
+            <strong>Dipl.-Ing. in Aerospace Engineering, 2011</strong><br>
+            University of Stuttgart, Germany
+          </li>
+          <li>
+            <strong>MS in Aerospace Engineering, 2010</strong><br>
+            Georgia Institute of Technology, US
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<!--<center>
-	<p id="gfg"></p>
-</center>-->
-
-<br>
-...... <br>
-
-
-</td></tr></table>
-</td>
-</tr>
-</table>
+    <div class="contact-section">
+      <h2>Contact</h2>
+      <div class="contact-item"><span class="icon">&#9993;</span> <a href="mailto:michael.schlottke-lakemper@uni-a.de">michael.schlottke-lakemper@uni-a.de</a></div>
+      <div class="contact-item"><span class="icon">&#128222;</span> +49 (821) 598-3908</div>
+      <div class="contact-item"><span class="icon">&#9873;</span> Universitätsstraße 12a, 86159 Augsburg</div>
+      <div class="contact-item"><span class="icon">&#128337;</span> I do not have regular office hours. Please make an appointment via email.</div>
+    </div>
+  </div>
 </body>
 </html>
